@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>autocomplete demo</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="st.css"/>
+</head>
+<body align="center">
+<img src="yougle.jpg" alt="Mountain View">
+ <div align="center">
+<label for="autocomplete">Search: </label>
+<input align="center" id="autocomplete">
+
+ </div>
+<script>
+$( "#autocomplete" ).autocomplete({
+	source: "http://localhost:5000" 
+	});
+</script>
+ 
+</body>
+</html>
